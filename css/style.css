@@ -1,0 +1,113 @@
+body {
+  font-family: "Lucida Console", "Courier New", monospace;
+  background-color: rgb(21, 51, 107);
+  color: rgb(255, 224, 224);
+}
+
+header {
+    margin: 2rem;
+    color: rgb(255, 156, 120);
+}
+
+button {
+    padding: 8px 12px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #ffffff;
+    border: none;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    transition: top 0.5s ease 0s;
+    position: relative;
+}
+
+button:hover {
+    top: +2px;
+}
+
+button:active {
+   transform:scale(0.9);
+   background-color: black;
+   color: white;
+}
+
+.music-image img {
+    width: 15rem;
+    transition: transform ease 0.2s;
+}
+
+.music-image img:hover {
+    transform: scale(1.1);
+}
+
+.controls {
+    width: 15rem;
+}
+
+.music-catalog {
+    width: 9rem;
+    display: flex;
+    justify-content: center;
+}
+
+.music-catalog div  img {
+    position: relative;
+    transition: top 0.5s ease 0s; 
+    transition: transform ease 0.2s;
+    top: 0;
+}
+
+.music-catalog div img:hover {
+    top: +5px;
+}
+
+.music-catalog div img:active {
+    transform: scale(0.9);
+}
+
+#volumeIcon {
+    font-size:x-large;
+}
+
+footer {
+    margin: 2rem;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.align-items-center {
+    justify-content: center;
+}
+
+@media only screen and (max-width: 600px) and (min-width: 221px) {
+    .music-catalog {
+        flex-wrap: wrap;
+    }
+     .music-image img {
+        width: 45%;
+    }
+}
+
+@media only screen and (max-width: 220px) {
+    .music-catalog {
+        flex-wrap: wrap;
+    }
+    .controls {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .controls button {
+        width: 4rem;
+    }
+    .controls p input {
+        display: flex;
+        width: 4rem;
+    }
+     .music-image img {
+        width: 45%;
+    }
+}

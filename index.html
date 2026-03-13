@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music player </title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="image/favicon.ico" />
+</head>
+<body>
+    <center>
+        <header><h1>𝄞𝄢 Music player ♬⋆.˚</h1></header>
+        <main>
+            <audio id="player"></audio>
+            <section id="music-card">
+                <h2 id="music-title"></h2>
+                <h3 id="music-album"></h3>
+                <p id="music-artist"></p>
+                <div class="music-image">
+                    <p><image id="musicImage"></image></p>
+                </div>
+            </section>
+
+            
+            <section class="controls">
+                <span id="musicProgression">⇩ Click buttons below to start music ⇩</span>
+                <span id="musicLength"></span> 
+                <p><input type="range" id="progressBar" value="0"></input></p>
+                <button id="btnPrevious">◀◀</button>
+                <button id="btnLaunch">▶︎</button>
+                <button id="btnPause" hidden>◼</button>
+                <button id="btnNext">▶︎▶︎</button><br><br>
+                <div class="d-flex align-items-center">
+                    <button id="volumeDown">Vol -</button>
+                    <button id="volumeUp">Vol +</button>
+                    <div id="volumeIcon">🔊</div>
+                </div>
+            </section>
+
+            <h2>Catalogue</h2>
+            <section class="music-catalog" id="music-catalog">
+
+            </section>
+        </main>
+        <footer>Copyright</footer>
+    </center>
+    <script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
