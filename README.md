@@ -1,5 +1,7 @@
 --------------------------------------------             Music Player          ------------------------------------------------------
 
+Demo : <a link='https://musicplayer.hichemlaouine.com/'>https://musicplayer.hichemlaouine.com/</a>
+
 Play music from a curated list of public domain tracks.
 
 Features :
@@ -17,3 +19,4 @@ Project evolution ideas :
 
 - Implement a playlist system
 - Give the user the power to upload and play it's own music file
+
